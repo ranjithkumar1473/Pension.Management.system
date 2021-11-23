@@ -1,4 +1,4 @@
-package PensionManagementsystem;
+package Pension.Management.system;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
