@@ -1,11 +1,19 @@
 package Pension.Management.system.model;
 
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
 public class PensionerDetails {
 
 	private int age;
 	private int aadhar;
 	private int pancard;
 	private String pensionType;
+	
+	@OneToOne
+	@JoinColumn(name = "pensioner_id")
+	private PensionDetails pensionDetails;
+	
 	public PensionerDetails() {
 		super();
 		// TODO Auto-generated constructor stub

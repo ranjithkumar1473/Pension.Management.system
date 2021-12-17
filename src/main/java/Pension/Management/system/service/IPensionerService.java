@@ -23,5 +23,5 @@ public class IPensionerService {
 		LOG.info("ValidatePensioner");
 		return iPensionerRepository.findByAadhar(iPensioner);
 	}
-	
+
 }

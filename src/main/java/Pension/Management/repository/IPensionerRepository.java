@@ -12,4 +12,5 @@ import Pension.Management.system.model.PensionerDetails;
 public interface IPensionerRepository extends JpaRespository<PensionerDetails,Integer>() {
 
 	public abstract Pensioner findByAadhar(int iPensioner) ;
+	public abstract PensionerDetails findByAadhar(PensionerDetails iPensioner);
 }

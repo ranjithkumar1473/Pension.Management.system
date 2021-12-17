@@ -1,8 +1,14 @@
 package Pension.Management.system.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class BankDetails extends PensionerDetails {
 
 	private String bankName;
+	@Id // primary key
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long accno;
 	private String branch;
 	private String IFSCCode;
